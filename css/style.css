@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;600&display=swap');
+*{
+    box-sizing: border-box;
+}
+
+body {
+width: 1100px;
+margin: auto;
+font-family: 'Roboto Slab', serif;
+display: grid;
+grid-template-rows: 100px 1fr 150px;
+gap: 30px;
+}
+
+header {
+display: grid;
+grid-template-columns:200px 1fr;
+align-items: center;
+background-color: #5b6d5b;
+padding: 0 70px;
+}
+header nav {
+    text-align: center;  
+}
+header nav a {
+    display:inline-block ;
+    text-decoration: none;
+    padding:10px 45px;
+    text-transform: capitalize;
+    color:#e2bcb7;
+    position: relative;
+}
+header nav a:hover {
+    color: #e2bcb7;
+    background: rgb(13, 16, 20);
+    
+
+}
+header nav a :hover::after{
+content: '';
+position: absolute;
+width: 100%;
+height: 2px;
+left: 0;
+bottom: 0;
+background: rgb(16, 245, 16);
+}
+main {
+width: 960px;
+margin: auto;
+display: grid;
+grid-template-rows: 450px 375px 400px;
+gap: 30px;
+}
+
+
+main section:nth-child(2){
+display: grid;
+grid-template-columns:repeat(3,1fr);
+gap: 30px;
+}
+
+main section:nth-child(3){
+    display: grid;
+grid-template-columns:repeat(2,1fr);
+
+}
+
+main section:nth-child(3) article{
+padding-left: 30px;
+}
+h2{
+    font-weight: 700;
+    font-size: 18px;
+}
+p{
+  height: 320px;
+  overflow: auto;
+  margin: 4px 0;
+  font-style: italic;
+}
+button{
+border: 0;
+padding: 15px 35px;
+background-color: #000;
+color: white;
+transition: all 350ms;
+}
+button:hover {
+    background-color: rgb(124, 88, 241);
+    color: rgb(226, 141, 159);
+}
+
+    footer {
+        background-color: #5b6d5b;
+        
+    }
